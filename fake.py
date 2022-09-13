@@ -11,9 +11,10 @@ last = [
 ]
 
 house_num = []
-
 for x in range(20):
     house_num.append(random.randrange(1000, 5000))
+    house = f'{random.randint(10000, 99999)}'
+    house_num.append(house)
 
 states = {
     'AK': 'Alaska',
@@ -23,7 +24,6 @@ states = {
     'CA': 'California',
     'CO': 'Colorado',
     'CT': 'Connecticut',
-    'DC': 'District of Columbia',
     'DE': 'Delaware',
     'FL': 'Florida',
     'GA': 'Georgia',
@@ -69,19 +69,40 @@ states = {
     'WY': 'Wyoming'
 }
 
-cities = {
-    "Alabama": ["Prattville", "Homewood", "Center Point", "Trussville", "Talladega"],
-    "Alaska": ["Fairbanks", "Anchorage", "Eagle River", "Badger", "Juneau"]
+cities = [
+    "Montgomery", "Janeau", "Pheonix", "Little Rock", "Sacramento", "Denver", "Hartford", "Dover",
+    "Tallahassee", "Atlanta", "Honolulu", "Boise", "Springfeild", "Indianapolis", "Des Moines", "Topeka",
+    "Frankfort", "Baton Rouge", "Augusta", "Annapolis", "Boston", "Lansing", "Saint Paul", "Jackson", 
+    "Jefferson City", "Helena", "Lincoln", "Carson City", "Concord", "Trenton", "Santa Fe", "Albany",
+    "Raleigh", "Bismarck", "Columbus", "Oklahoma City", "Salem", "Harrisburg", "Providence", "Columbia",
+    "Pierre", "Nashville", "Austin", "Salt Lake City", "Montpelier", "Richmond", "Olympia", "Charleston",
+    "Madison", "Cheyenne"
+]
 
-}
+street = [
+    "1st St", "2nd St", "3rd St", "4th St", "5th St", "6th St", "7th St", "8th St", "9th St", 
+    "Oak Avenue", "Main St", "Park St", "Pine St", "Maple Rd", "Cedar St", "Elm St", "Hill Rd",
+    "Veiw Blvd", "King Rd", "Preston Rd"
+]
 
 
 
 phone = []
 for x in range(20):
-    phone.append(random.randrange(2147653494, 2150038765))
+    phone_num = f'{random.randint(10000, 99999)}'
+    phone.append(phone_num)
 
-zip = []
+zip_list = []
 for x in range(20):
-    zip.append(random.randrange(75056, 94768))
+    zip_code = f'{random.randint(10000, 99999)}'
+    zip_list.append(zip_code)
+
+# make zip match to state
+
+
+for x in range(20):
+    i = random.randint(1, 20)
+
+
+
 #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
