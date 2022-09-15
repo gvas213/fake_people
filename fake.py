@@ -12,8 +12,7 @@ last = [
 
 house_num = []
 for x in range(20):
-    house_num.append(random.randrange(1000, 5000))
-    house = f'{random.randint(10000, 99999)}'
+    house = f'{random.randint(1000, 5000)}'
     house_num.append(house)
 
 states = [
@@ -89,7 +88,7 @@ street = [
 
 phone = []
 for x in range(20):
-    phone_num = f'{random.randint(10000, 99999)}'
+    phone_num = f'{random.randint(1000000000, 9999999999)}'
     phone.append(phone_num)
 
 zip_list = []
@@ -123,8 +122,8 @@ while len(people) < 20:
     zip_num = random.randint(0, 19)
     zip_c = zip_list[zip_num]
 
-    phone_num = random.randint(0, 19)
-    phone_number = phone[phone_num]
+    phone_n = random.randint(0, 19)
+    phone_number = phone[phone_n]
 
 
     people[first_name] = [last_name, address, streets, city, state, zip_c, phone_num]
