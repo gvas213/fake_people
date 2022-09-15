@@ -99,10 +99,33 @@ for x in range(20):
 
 # make zip match to state
 
+people = {}
 
-for x in range(20):
-    i = random.randint(1, 20)
+while len(people) < 20:
+    first_num = random.randint(0, 19)
+    first_name = first[first_num]
+
+    last_num = random.randint(0, 19)
+    last_name = last[last_num]
+
+    house_number = random.randint(0, 19)
+    address = house_num[house_number]
+
+    state_num= random.randint(0, 49)
+    state = states[state_num]
+
+    cities_num = random.randint(0, 19)
+    city = cities[cities_num]
+
+    street_num = random.randint(0, 19)
+    streets = street[street_num]
+
+    name = " ".join(first_name, last_name)
+
+    # people[first_name] = 
 
 
+
+print(people)
 
 #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
